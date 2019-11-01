@@ -16,12 +16,13 @@ apply plugin: 'io.spring.dependency-management'
 bootJar {
     baseName = 'gs-spring-boot'
     version =  '0.1.0'
-    mainClassName='com.reddy.config.SpringMainConfig'
 }
 
-jar{
-baseName='employeeDetails'
-enabled=true
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.reddy.config.SpringMainConfig'
+    }
+    enabled=true
 }
 
 repositories {
