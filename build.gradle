@@ -21,7 +21,7 @@ bootJar {
 
 jar{
 baseName='employeeDetails'
-enable=true
+enable='true'
 }
 
 repositories {
