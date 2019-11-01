@@ -19,6 +19,11 @@ bootJar {
     mainClassName='com.reddy.config.SpringMainConfig'
 }
 
+jar{
+baseName='employeeDetails'
+enable=true
+}
+
 repositories {
     mavenCentral()
 }
